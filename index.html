@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora - CodeBy Ryan</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <div class="calculator">
+      <!-- Tela da calculadora -->
+      <div id="display">0</div>
+      <!-- Botões da calculadora -->
+      <div class="buttons">
+        <!-- Botão "C" para limpar a tela -->
+        <button class="btn" onclick="clearDisplay()">C</button>
+
+        <!-- Botões de operações: divisão, multiplicação, subtração -->
+        <button class="btn" onclick="appendValue('/')">/</button>
+        <button class="btn" onclick="appendValue('*')">*</button>
+        <button class="btn" onclick="deleteLast()">DEL</button>
+
+        <!-- Botões de números de 7 a 9 -->
+        <button class="btn" onclick="appendValue('7')">7</button>
+        <button class="btn" onclick="appendValue('8')">8</button>
+        <button class="btn" onclick="appendValue('9')">9</button>
+
+        <!-- Botão de operação de subtração -->
+        <button class="btn" onclick="appendValue('-')">-</button>
+
+        <!-- Botões de números de 4 a 6 -->
+        <button class="btn" onclick="appendValue('4')">4</button>
+        <button class="btn" onclick="appendValue('5')">5</button>
+        <button class="btn" onclick="appendValue('6')">6</button>
+
+        <!-- Botão de operação de adição -->
+        <button class="btn" onclick="appendValue('+')">+</button>
+
+        <!-- Botões de números de 1 a 3 -->
+        <button class="btn" onclick="appendValue('1')">1</button>
+        <button class="btn" onclick="appendValue('2')">2</button>
+        <button class="btn" onclick="appendValue('3')">3</button>
+
+        <!-- Botão de igual, para calcular o resultado -->
+        <button class="btn equal" onclick="calculateResult()">=</button>
+
+        <!-- Botão de zero -->
+        <button class="btn zero" onclick="appendValue('0')">0</button>
+
+        <!-- Botão para inserir ponto (para números decimais) -->
+        <button class="btn" onclick="appendValue('.')">.</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
