@@ -1,0 +1,142 @@
+/* Definindo a fonte local */
+@font-face {
+  font-family: "Pixelify Sans"; /* Nome da fonte que você vai usar */
+  src: url("/font/Pixelify\ Sans.ttf") format("truetype"); /* Caminho relativo para a fonte */
+  font-weight: 400; /* Peso da fonte regular */
+  font-style: normal; /* Estilo normal */
+}
+
+/* Define o estilo básico para o corpo da página */
+body {
+  font-family: Arial, sans-serif; /* Define uma fonte legível */
+  flex-direction: column; /* Coloca os elementos um abaixo do outro */
+  display: flex; /* Centraliza o conteúdo horizontalmente */
+  justify-content: center; /* Alinha o conteúdo no centro horizontal */
+  align-items: center; /* Alinha o conteúdo no centro vertical */
+  height: 100vh; /* Ocupa 100% da altura da janela do navegador */
+  margin: 0; /* Remove margens padrão */
+  background: #ffffff; /* Define uma cor de fundo suave */
+}
+
+/* Estilizando o Logo */
+.logo {
+  font-size: 1.5rem; /* Aumenta o tamanho da fonte para torná-la mais chamativa */
+  font-weight: bold;
+  background: linear-gradient(
+    270deg,
+    #12a1e3 -4.92%,
+    #1173ce 78.24%
+  ); /* Gradiente de cor */
+  -webkit-background-clip: text; /* Aplica o fundo ao texto (em navegadores WebKit) */
+  -webkit-text-fill-color: transparent; /* Faz o texto ser preenchido com o gradiente */
+  background-clip: text; /* Aplica o gradiente no texto */
+  font-family: "Bayon", sans-serif; /* Fonte estilosa para dar um visual único */
+  text-align: center; /* Centraliza o texto */
+  margin-top: 20px; /* Espaço acima do logo */
+
+  /* Efeito de transição para quando o mouse passar por cima */
+  transition: transform 0.3s ease, text-shadow 0.3s ease;
+}
+
+/* Efeito de hover para o logo */
+.logo:hover {
+  /* Anima o logo para um leve zoom ao passar o mouse */
+  transform: scale(1.1); /* Aumenta um pouco o tamanho */
+
+  /* Mudança na sombra para destacar mais o logo */
+  text-shadow: 4px 4px 10px rgba(28, 172, 255, 0.3);
+}
+
+/* styles.css */
+h4 {
+  font-family: "Pixelify Sans", serif;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+  color: #1b1b1b;
+  line-height: 15px; /* 24 pixels de espaçamento entre as linhas */
+}
+
+/* Define o estilo principal da calculadora */
+.calculator {
+  width: 300px; /* Largura fixa da calculadora */
+  background: #fff; /* Cor de fundo branca */
+  border-radius: 10px; /* Bordas arredondadas */
+  box-shadow: 0 4px 10px rgba(25, 209, 255, 0.555); /* Adiciona uma sombra para destacar */
+  overflow: hidden; /* Garante que nada ultrapasse as bordas arredondadas */
+  margin-top: 1%; /* Dá um espaço da logo */
+}
+
+/* Estilo da tela de exibição */
+#display {
+  height: 60px; /* Altura da tela */
+  background: #222; /* Fundo escuro */
+  color: #fff; /* Texto branco para contraste */
+  text-align: right; /* Alinha os números à direita */
+  font-size: 2rem; /* Tamanho grande do texto */
+  line-height: 60px; /* Centraliza verticalmente o texto */
+  padding: 0 10px; /* Adiciona espaço interno (horizontal) */
+  overflow: hidden; /* Esconde conteúdo extra (se houver) */
+}
+
+/* Estilo dos botões */
+.buttons {
+  display: grid; /* Usa grid layout para organizar os botões */
+  grid-template-columns: repeat(4, 1fr); /* Cria 4 colunas de tamanhos iguais */
+  gap: 5px; /* Espaçamento entre os botões */
+  padding: 10px; /* Espaçamento interno ao redor dos botões */
+}
+
+/* Estilo padrão para os botões */
+.btn {
+  height: 50px; /* Altura dos botões */
+  font-size: 1.2rem; /* Tamanho do texto nos botões */
+  border: none; /* Remove bordas */
+  border-radius: 5px; /* Bordas levemente arredondadas */
+  background: #eee; /* Cor de fundo padrão */
+  cursor: pointer; /* Mostra o cursor de "mão" ao passar o mouse */
+  transition: transform 0.1s, background 0.2s; /* Animações suaves para clique e hover */
+}
+
+/* Efeito ao passar o mouse nos botões */
+.btn:hover {
+  background: #ddd; /* Muda a cor de fundo ao passar o mouse */
+}
+
+/* Efeito ao clicar no botão */
+.btn:active {
+  transform: scale(0.95); /* Reduz o tamanho do botão levemente ao clicar */
+}
+
+/* Estilo especial para o botão "=" */
+.equal {
+  background: #f78c40; /* Cor laranja destacada */
+  color: #fff; /* Texto branco para contraste */
+  grid-column: span 2; /* Ocupa duas colunas no grid */
+}
+
+/* Efeito especial para o botão "=" ao passar o mouse */
+.equal:hover {
+  background: #f76a1e; /* Cor laranja mais intensa */
+}
+
+/* Botão "zero" ocupa duas colunas */
+.zero {
+  grid-column: span 2; /* O botão "0" ocupa duas colunas horizontalmente */
+}
+
+/* Tornando a calculadora responsiva */
+@media (max-width: 400px) {
+  .calculator {
+    width: 90%; /* Ajusta a largura da calculadora para 90% da tela */
+  }
+
+  #display {
+    font-size: 1.5rem; /* Reduz o tamanho da fonte da tela */
+  }
+
+  .btn {
+    font-size: 1rem; /* Reduz o tamanho do texto nos botões */
+    height: 40px; /* Reduz a altura dos botões */
+  }
+}

@@ -7,6 +7,12 @@
     <link rel="stylesheet" href="/css/style.css" />
   </head>
   <body>
+    <div class="Logo">
+      <a href="#" class="logo" title="Criador"> <<span>CodeBy-Ryan</span>> </a>
+    </div>
+
+    <h4>Um projeto de calculadora simples <br />usando HTML, CSS e JS.</h4>
+
     <div class="calculator">
       <!-- Tela da calculadora -->
       <div id="display">0</div>
@@ -41,16 +47,16 @@
         <button class="btn" onclick="appendValue('2')">2</button>
         <button class="btn" onclick="appendValue('3')">3</button>
 
-        <!-- Botão de igual, para calcular o resultado -->
-        <button class="btn equal" onclick="calculateResult()">=</button>
+        <!-- Botão para inserir ponto (para números decimais) -->
+        <button class="btn" onclick="appendValue('.')">.</button>
 
         <!-- Botão de zero -->
         <button class="btn zero" onclick="appendValue('0')">0</button>
 
-        <!-- Botão para inserir ponto (para números decimais) -->
-        <button class="btn" onclick="appendValue('.')">.</button>
+        <!-- Botão de igual, para calcular o resultado -->
+        <button class="btn equal" onclick="calculateResult()">=</button>
       </div>
     </div>
-    <script src="script.js"></script>
+    <script src="/js/script.js"></script>
   </body>
 </html>
