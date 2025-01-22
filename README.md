@@ -22,7 +22,7 @@ Este projeto é uma **calculadora simples** desenvolvida com **HTML**, **CSS** e
 
 1. Clone o repositório:
     ```bash
-    git clone https://github.com/CodeBy-Ryan/Calculadora.git
+    https://github.com/CodeBy-Ryan/Calculadora.git
     ```
 2. Abra o arquivo `index.html` no seu navegador para usar a calculadora.
 
