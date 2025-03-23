@@ -4,7 +4,7 @@ Este projeto é uma **calculadora simples** desenvolvida com **HTML**, **CSS** e
 
 ## Imagem da Tela da Calculadora
 
-![Tela da Calculadora](https://github.com/user-attachments/assets/aa093d5f-8490-47d3-b48e-4cd99a1fc9fc)
+![Image](https://github.com/user-attachments/assets/aa43dd2a-ded8-4567-9cf6-cad37e869dc7)
 
 ## Funcionalidades
 
